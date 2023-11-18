@@ -28,7 +28,7 @@ const contactSchema = new mongoose.Schema({
     message: String,
 })
 const Contact = mongoose.model("Contact", contactSchema)
-app.post('/submit', async (req, res) => {
+app.post('/success', async (req, res) => { //change back to /submit if the code doesn't work
     const formData = {
         first:req.body.first,   
         last:req.body.last,
